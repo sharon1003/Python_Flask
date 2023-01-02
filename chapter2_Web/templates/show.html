@@ -1,0 +1,20 @@
+<!-- show.html -->
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset='utf-8'>
+		<title>第一個模板</title>
+		<link rel='stylesheet' href="{{ url_for('static', filename='style1.css')}}">
+</head>
+<body>
+	<h3>
+		{% for person in persons %}
+			<ul>
+				<li>Name: {{person.name}}</li>
+				<li>Phone: {{person.phone}}</li>
+				<li>Age: {{person.age}}</li>
+			</ul>
+		{% endfor %}
+	</h3>
+</body>
+</html>
