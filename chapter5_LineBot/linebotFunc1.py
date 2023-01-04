@@ -8,8 +8,8 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, StickerSendMessage, LocationSendMessage, QuickReply, QuickReplyButton, MessageAction
 
-line_bot_api = LineBotApi('+5hl+pZjbHxjlAd9CY9p+YsqRZK2Eg/AjGyFo3+91bxPr7cpV/hhCeAEcfdiljM2+A3i+BZsuPykZ0bbvjy0bz0JfB6aLgc77XzkZaEI7N29rckTCzLdcMcSiJIZEWyZBT3IgTUjxLpDj0X+OThz+gdB04t89/1O/w1cDnyilFU=') # Access token
-handler = WebhookHandler('c8f2391102eeda18eefff15e33582ae1') # Channel secret
+line_bot_api = LineBotApi('') # Access token
+handler = WebhookHandler('') # Channel secret
 
 
 @app.route("/callback", methods=['POST']) # 建立callback路由，檢查Line Bot的資料是否正確
